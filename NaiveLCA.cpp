@@ -26,6 +26,7 @@ void dfs(ll root, ll par)
         dfs(i, root);
     }
 }
+//O(n) worst case Time Complexity
 ll naivelcs(ll x,ll y){
     if(height[x]<height[y])swap(x,y);
         while(height[x]!=height[y]){
@@ -60,6 +61,7 @@ void solve()
     dfs(1, -1);
     ll q;
     cin>>q;
+    // Total query+lca Time Complexity is O(q*n)
     while (q--)
     {
         ll x,y;
