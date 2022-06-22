@@ -66,7 +66,7 @@ void solve()
     {
         ll x,y;
         cin>>x>>y;
-        cout<<naivelcs(x,y)<<'\n';
+        cout<<naivelca(x,y)<<'\n';
     }
 }
 //Bhai,mujhe patta nahi mera kya hoga,pr i will try my best bcz mujhe regret nahi karna yarrr
