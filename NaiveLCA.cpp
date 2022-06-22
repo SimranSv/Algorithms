@@ -27,7 +27,7 @@ void dfs(ll root, ll par)
     }
 }
 //O(n) worst case Time Complexity
-ll naivelcs(ll x,ll y){
+ll naivelca(ll x,ll y){
     if(height[x]<height[y])swap(x,y);
         while(height[x]!=height[y]){
             x=rootstore[x];
