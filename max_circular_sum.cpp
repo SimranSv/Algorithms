@@ -52,7 +52,7 @@ void Letsgo()
      read(n,v);
 
      ll curr_sum=0;
-     ll sum=LONG_LONG_MAX;
+     ll sum=0;
      ll tot_sum=0;
      ll kadanesum=0;
      ll kadanemax=LONG_LONG_MIN;
@@ -69,6 +69,10 @@ void Letsgo()
         sum=min(sum,curr_sum);
         if(curr_sum>0)curr_sum=0;
      }
+    if(kadanemax<0){
+        cout<<kadanemax<<'\n';
+        return;
+    }
      //maximum(totalsum-minimumsum,kadanemax)
      cout<<max(kadanemax,tot_sum-sum)<<'\n';
 
